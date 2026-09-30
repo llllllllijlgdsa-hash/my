@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<h1>Мой сайт</h1>
+<style>
+        .send-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .send-button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button class="send-button">Отправить</button>
+
+</body>
+</html>
+ <form>
+        <h3>Анкета</h3>
+        <h4>Ввести дані</h4>
+
+        <p>
+            Прізвище: <input type="text" name="lastname" size="10" /> 
+            Ім'я: <input type="text" name="firstname" size="10" /> 
+            По батькові: <input type="text" name="patronymic" size="10" />
+        </p>
+
+        <h4>Стать</h4>
+        <p>
+            <input type="radio" name="gender" value="female" /> Жіноча
+            <input type="radio" name="gender" value="male" /> Чоловіча
+        </p>
+
+        <p>
+            Національність: <input type="text" name="nationality" size="15" />
+        </p>
+
+        <p>
+            Обрати населений пункт:
+            <select name="city_select">
+                <option value="1">Місто</option>
+                <option value="2">Село</option>
+                <option value="3">Смт</option>
+            </select>
+            Якщо немає у списку, ввести в поле власноруч: 
+            <input type="text" name="city_manual" size="15" />
+        </p>
+
+        <p>
+            Навчальний заклад: <input type="text" name="school" size="20" />
+        </p>
+
+        <p>
+            Курс навчання (клас): <input type="text" name="course" size="10" />
+        </p>
+
+        <p>
+            Професія: <input type="text" name="profession" size="20" />
+        </p>
+
+        <h4>Предмети, якими цікавлюсь</h4>
+        <p>
+            <input type="checkbox" name="subject" value="ukr" /> Українська мова та література<br />
+            <input type="checkbox" name="subject" value="physics" /> Фізика<br />
+            <input type="checkbox" name="subject" value="math" /> Математика<br />
+            <input type="checkbox" name="subject" value="biology" /> Біологія<br />
+            <input type="checkbox" name="subject" value="chemistry" /> Хімія<br />
+            Інша мова: <input type="text" name="custom_subject1" size="15" /><br />
+            Інша мова: <input type="text" name="custom_subject2" size="15" /><br />
+            Інша мова: <input type="text" name="custom_subject3" size="15" />
+        </p>
+
+        <p>
+            <input type="reset" value="Оновити форму" />
+            <input type="submit" value="Відправка" />
+        </p>
+    </form>
+
+</body>
+</html>
+<html>
+<head>
+    <title>Проста валідація</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Реєстрація</legend>
+            
+            Введіть своє прізвище та ім'я:<br>
+            <input type="text" name="firstname" required><br>
+            
+            Ваш Email:<br>
+            <input type="Email" name="email" required><br>
+            
+            <input type="radio" name="gender" required> Чоловік<br>
+            <input type="radio" name="gender" required> Жінка<br>
+            
+            Я погоджуюсь з умовами<br>
+            <input type="checkbox" name="terms" required><br>
+            
+            <input type="submit" value="Відправити">
+        </fieldset>
+    </form>
+</body>
+</html>
